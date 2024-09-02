@@ -21,6 +21,9 @@ tailwind.config = {
           to: { transform: "translateX(-50%)" },
         },
       },
+      borderRadius: {
+        "64px": "64px",
+      },
     },
   },
 };
