@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Layout By Spikes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-graybg bg-[url('./files/Pattern.svg')] font-poppins">
+    <header
+      class="flex max-w-[1200px] mx-auto mb-8 w-full justify-between items-center p-8"
+    >
+      <div class="text-2xl font-bold">
+        <img class="w-36 h-12" src="./files/layers-logo.svg" alt="Logo" />
+      </div>
+      <nav
+        class="flex justify-between text-gray bg-graybg border-solid border-[1px] rounded-full border-blackGray"
+      >
+        <ul class="flex space-x-6 px-[3px] py-[10px]">
+          <li>
+            <a
+              href="#home"
+              class="font-poppins hover:text-white hover:bg-blackGray py-2 px-8 rounded-full active:bg-blackGray"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-poppins hover:text-white hover:bg-blackGray py-2 px-8 rounded-full"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-poppins hover:text-white hover:bg-blackGray py-2 px-8 rounded-full"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-poppins hover:text-white hover:bg-blackGray py-2 px-8 rounded-full"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="flex space-x-4">
+        <a href="#"
+          ><i
+            class="fa-brands fa-dribbble text-2xl text-gray hover:text-white transition-colors duration-300"
+          ></i
+        ></a>
+        <a href="#"
+          ><i
+            class="fa-brands fa-facebook text-2xl text-gray hover:text-white transition-colors duration-300"
+          ></i
+        ></a>
+        <a href="#"
+          ><i
+            class="fa-brands fa-instagram text-2xl text-gray hover:text-white transition-colors duration-300"
+          ></i
+        ></a>
+      </div>
+    </header>
+    <main class="flex justify-center items-center" id="home">
+      <div
+        class="w-[1200px] max-w-[1200px] grid grid-cols-4 grid-rows-5 gap-4 place-content-center p-2"
+      >
+        <div
+          class="relative flex flex-col gap-8 col-start-1 col-end-3 row-start-1 row-end-3 rounded-[64px] border-blackGray bg-[url('./files/framediv1.png')] bg-cover bg-center px-12 pt-12"
+        >
+          <div class="absolute inset-0 bg-black/60 rounded-[64px]"></div>
+          <div class="relative p-0">
+            <h1 class="relative text-white text-2xl">
+              <span class="font-semibold">Designluch</span> - Product Designer
+              and noCode Developer
+            </h1>
+            <a href="#" class="absolute -top-2 right-0"
+              ><i
+                class="fa-solid fa-arrow-right text-gray text-lg transform -rotate-45 transition-transform hover:translate-x-1 hover:-translate-y-1"
+              ></i
+            ></a>
+          </div>
+          <hr class="text-white" />
+          <p class="relative text-white text-xs font-extralight">Journaling</p>
+          <ul
+            class="flex flex-col list-disc gap-8 text-white text-md relative max-h-[365px] overflow-y-scroll pr-4"
+          >
+            <li class="flex gap-4 w-auto">
+              <div class="whitespace-nowrap text-gray">25 Jan:</div>
+              <div>Started a new mobile design project.</div>
+            </li>
+            <li class="flex gap-4 w-auto">
+              <div class="whitespace-nowrap text-gray">24 Jan:</div>
+              <div>
+                Received a certification in advanced UX design techniques.
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <div class="whitespace-nowrap text-gray">23 Jan:</div>
+              <div>
+                Completed a user research phase for an ongoing web design
+                project.
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <div class="whitespace-nowrap text-gray">22 Jan:</div>
+              <div>
+                Attended a workshop on the latest trends in UI animation.
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <div class="whitespace-nowrap text-gray">21 Jan:</div>
+              <div>Launched a redesigned website for a major client.</div>
+            </li>
+            <li class="flex gap-4">
+              <div class="whitespace-nowrap text-gray">20 Jan:</div>
+              <div>Brainstormed ideas for a new mobile app concept.</div>
+            </li>
+            <li class="flex gap-4">
+              <div class="whitespace-nowrap text-gray">19 Jan:</div>
+              <div>Reviewed wireframes for a client's e-commerce site.</div>
+            </li>
+            <li class="flex gap-4">
+              <div class="whitespace-nowrap text-gray">18 Jan:</div>
+              <div>Finalized the UI design for a fitness tracking app.</div>
+            </li>
+            <li class="flex gap-4">
+              <div class="whitespace-nowrap text-gray">17 Jan:</div>
+              <div>Started prototyping a new feature for a SaaS product.</div>
+            </li>
+            <li class="flex gap-4">
+              <div class="whitespace-nowrap text-gray">16 Jan:</div>
+              <div>Conducted usability testing for a new website.</div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="col-start-1 col-end-3 row-start-3 row-end-4 bg-red-500"
+        ></div>
+        <div
+          class="col-start-1 col-end-3 row-start-4 row-end-6 bg-red-500"
+        ></div>
+        <div
+          class="col-start-3 col-end-5 row-start-1 row-end-2 flex flex-col gap-14 py-12 pl-12 bg-deepBlack rounded-[64px]"
+        >
+          <div class="mr-12">
+            <div class="flex justify-between">
+              <h2 class="relative text-white text-lg">
+                My adventure lasting 10+ years
+              </h2>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-arrow-right text-gray text-lg transform -rotate-45 transition-transform hover:translate-x-1 hover:-translate-y-1"
+                ></i
+              ></a>
+            </div>
+            <p class="text-gray font-light text-sm">21 projects realised 🎉</p>
+          </div>
+
+          <div
+            class="flex space-x-6 overflow-hidden rounded-tl-3xl rounded-bl-3xl border-solid border-borderIcon border-t border-l border-b bg-bgIcon p-2"
+          >
+            <div class="flex space-x-6 animate-loop-scroll">
+              <img src="./files/A.svg" alt="A" class="max-w-none h-12 w-12" />
+              <img
+                src="./files/Jullia.svg"
+                alt="Jullia"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/Lacerta.svg"
+                alt="Lacerta"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/MerryKitchen.svg"
+                alt="Merry Kitchen"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/Orangesoft.svg"
+                alt="Orangesoft"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/Stocks.svg"
+                alt="Stocks"
+                class="max-w-none h-12 w-12"
+              />
+
+              <img src="./files/A.svg" alt="A" class="max-w-none h-12 w-12" />
+              <img
+                src="./files/Jullia.svg"
+                alt="Jullia"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/Lacerta.svg"
+                alt="Lacerta"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/MerryKitchen.svg"
+                alt="Merry Kitchen"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/Orangesoft.svg"
+                alt="Orangesoft"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/Stocks.svg"
+                alt="Stocks"
+                class="max-w-none h-12 w-12"
+              />
+
+              <img src="./files/A.svg" alt="A" class="max-w-none h-12 w-12" />
+              <img
+                src="./files/Jullia.svg"
+                alt="Jullia"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/Lacerta.svg"
+                alt="Lacerta"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/MerryKitchen.svg"
+                alt="Merry Kitchen"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/Orangesoft.svg"
+                alt="Orangesoft"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/Stocks.svg"
+                alt="Stocks"
+                class="max-w-none h-12 w-12"
+              />
+
+              <img src="./files/A.svg" alt="A" class="max-w-none h-12 w-12" />
+              <img
+                src="./files/Jullia.svg"
+                alt="Jullia"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/Lacerta.svg"
+                alt="Lacerta"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/MerryKitchen.svg"
+                alt="Merry Kitchen"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/Orangesoft.svg"
+                alt="Orangesoft"
+                class="max-w-none h-12 w-12"
+              />
+              <img
+                src="./files/Stocks.svg"
+                alt="Stocks"
+                class="max-w-none h-12 w-12"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-start-3 col-end-4 row-start-2 row-end-4 bg-red-500"
+        ></div>
+        <div
+          class="col-start-4 col-end-5 row-start-2 row-end-3 bg-red-500"
+        ></div>
+        <div
+          class="col-start-4 col-end-5 row-start-3 row-end-4 bg-red-500"
+        ></div>
+        <div
+          class="col-start-3 col-end-5 row-start-4 row-end-5 bg-red-500"
+        ></div>
+        <div
+          class="col-start-3 col-end-4 row-start-5 row-end-6 bg-red-500"
+        ></div>
+        <div
+          class="col-start-4 col-end-5 row-start-5 row-end-6 bg-red-500"
+        ></div>
+      </div>
+    </main>
+    <footer class="flex justify-between items-center p-6">
+      <div>© 2023 Layers</div>
+      <div class="flex space-x-4">
+        <a href="#"><img src="path-to-icon.png" alt="Icon" /></a>
+        <a href="#"><img src="path-to-icon.png" alt="Icon" /></a>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
