@@ -12,6 +12,9 @@ tailwind.config = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      fontSize: {
+        xxs: "9px",
+      },
       animation: {
         "loop-scroll": "scroll 20s linear infinite",
       },
@@ -26,8 +29,8 @@ tailwind.config = {
       },
 
       gridTemplateRows: {
-        "10-fixed": "repeat(10, 160px)",
-        "5-fixed": "repeat(5, 200px)",
+        "10-fixed": "repeat(10, 170px)",
+        "5-fixed": "repeat(5, 220px)",
       },
       screens: {
         sm: "680px",
