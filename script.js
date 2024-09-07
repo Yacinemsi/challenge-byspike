@@ -14,6 +14,7 @@ tailwind.config = {
       },
       fontSize: {
         xxs: "9px",
+        xs: "10px",
       },
       animation: {
         "loop-scroll": "scroll 20s linear infinite",
@@ -29,11 +30,14 @@ tailwind.config = {
       },
 
       gridTemplateRows: {
-        "10-fixed": "repeat(10, 170px)",
-        "5-fixed": "repeat(5, 220px)",
+        "10-fixed": "repeat(10, 180px)",
+        "5-fixed": "repeat(5, 230px)",
       },
       screens: {
         sm: "680px",
+      },
+      borderWidth: {
+        1: "1px",
       },
     },
     backgroundPosition: {

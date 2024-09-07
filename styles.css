@@ -1,0 +1,24 @@
+.hover-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1da1f2; /* Couleur bleue de Twitter */
+  transition: width 0.2s;
+  z-index: 0;
+}
+
+.hover-button:hover::before {
+  width: 100%;
+}
+
+.hover-button span,
+.hover-button img {
+  position: relative;
+  z-index: 10;
+}
+.hover-button:hover .arrow-icon path {
+  stroke: #ffffff !important; /* Change la couleur de la flèche en blanc */
+}

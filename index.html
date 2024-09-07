@@ -79,12 +79,12 @@
       </div>
     </header>
 
-    <main class="p-2" id="home">
+    <main class="p-2" id="hom">
       <div
         class="w-full grid grid-cols-2 grid-rows-10-fixed gap-4 max-w-5xl mx-auto place-content-center sm:grid-cols-4 sm:grid-rows-5-fixed"
       >
         <div
-          class="col-start-1 col-end-3 row-start-1 row-end-3 relative p-4 flex flex-col sm:gap-8 gap-6 rounded-radius border-blackGray bg-[url('./files/framediv1.png')] bg-cover bg-center sm:col-start-1 sm:col-end-3 sm:row-start-1 sm:row-end-3"
+          class="col-start-1 col-end-3 row-start-1 row-end-3 relative p-4 flex flex-col sm:gap-8 gap-6 rounded-radius border-blackGray border-solid border-1 bg-[url('./files/framediv1.png')] bg-cover bg-center sm:col-start-1 sm:col-end-3 sm:row-start-1 sm:row-end-3"
         >
           <div class="absolute inset-0 bg-black/60 rounded-radius"></div>
           <div
@@ -155,7 +155,7 @@
           </ul>
         </div>
         <div
-          class="flex flex-col justify-evenly px-6 sm:pt-2 sm:px-8 col-start-1 col-end-3 row-start-3 row-end-4 bg-deepBlack rounded-radius sm:col-start-1 sm:col-end-3 sm:row-start-3 sm:row-end-4"
+          class="flex flex-col justify-evenly px-6 sm:pt-2 sm:px-8 col-start-1 col-end-3 row-start-3 row-end-4 bg-deepBlack border-blackGray border-solid border-1 rounded-radius sm:col-start-1 sm:col-end-3 sm:row-start-3 sm:row-end-4"
         >
           <div>
             <div class="flex gap-1 justify-between">
@@ -224,7 +224,7 @@
           </div>
         </div>
         <div
-          class="col-start-1 col-end-3 row-start-4 row-end-6 flex flex-col justify-between bg-deepBlack bg-[url('./files/fond-icon-profil.png')] bg-cover bg-no-repeat bg-center bg-bottomCenter6 rounded-radius overflow-hidden sm:col-start-1 sm:col-end-3 sm:row-start-4 sm:row-end-6"
+          class="col-start-1 col-end-3 row-start-4 row-end-6 flex flex-col justify-between border-blackGray border-solid border-1 bg-deepBlack bg-[url('./files/fond-icon-profil.png')] bg-cover bg-no-repeat bg-center bg-bottomCenter6 rounded-radius overflow-hidden sm:col-start-1 sm:col-end-3 sm:row-start-4 sm:row-end-6"
         >
           <div class="flex justify-between items-center pt-6 px-6">
             <div class="basis-2/3">
@@ -250,7 +250,7 @@
           </div>
         </div>
         <div
-          class="col-start-1 col-end-3 row-start-6 row-end-7 flex flex-col bg-deepBlack rounded-radius overflow-hidden sm:col-start-3 sm:col-end-5 sm:row-start-1 sm:row-end-2 sm:gap-4"
+          class="col-start-1 col-end-3 border-solid border-1 row-start-6 row-end-7 flex flex-col border-blackGray bg-deepBlack rounded-radius overflow-hidden sm:col-start-3 sm:col-end-5 sm:row-start-1 sm:row-end-2 sm:gap-4"
         >
           <div class="px-6 sm:px-8 py-4">
             <div class="flex justify-between items-start gap-2 sm:pt-4">
@@ -382,12 +382,12 @@
           </div>
         </div>
         <div
-          class="col-start-1 col-end-2 row-start-7 row-end-9 relative bg-[url('./files/bg-galaxy.png')] bg-cover bg-center rounded-radius p-0 overflow-hidden sm:col-start-3 sm:col-end-4 sm:row-start-2 sm:row-end-4"
+          class="col-start-1 col-end-2 row-start-7 row-end-9 relative bg-[url('./files/bg-galaxy.png')] bg-cover bg-center border-blackGray border-solid border-1 rounded-radius p-0 overflow-hidden sm:col-start-3 sm:col-end-4 sm:row-start-2 sm:row-end-4"
         >
           <div class="p-4">
             <div class="flex justify-between items-end">
               <h2 class="relative text-white text-sm sm:text-md">
-                Application name
+                Application
               </h2>
               <a href="#"
                 ><i
@@ -404,28 +404,75 @@
           />
         </div>
         <div
-          class="col-start-2 col-end-3 row-start-7 row-end-8 bg-deepBlack rounded-radius sm:col-start-4 sm:col-end-5 sm:row-start-2 sm:row-end-3"
+          class="p-4 flex flex-col justify-between gap-2 col-start-2 col-end-3 row-start-7 row-end-8 bg-deepBlack border-blackGray border-solid border-1 rounded-radius sm:col-start-4 sm:col-end-5 sm:row-start-2 sm:row-end-3"
         >
-          DIV6
+          <div class="flex justify-between">
+            <div class="flex gap-1 w-2/3 sm:w-1/2">
+              <div class="">
+                <img src="./files/profilepicture.png" alt="photo de profil" />
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-sm text-white">Name</p>
+                <p class="text-xxs sm:text-xs text-gray">@name</p>
+              </div>
+            </div>
+            <div>
+              <img
+                class="relative top-0 right-0 w-6 sm:w-8"
+                src="./files/icontwitter.svg"
+                alt="icon twitter"
+              />
+            </div>
+          </div>
+          <div>
+            <p class="text-xs sm:text-sm text-white">
+              I never imagined I would do this, but I recently published my
+              first case study on Dribbble. 😎
+            </p>
+          </div>
+          <button
+            class="relative overflow-hidden text-white border border-gray rounded-full text-center text-xs sm:text-sm w-full flex justify-between items-center py-2 px-3 hover-button"
+          >
+            <span class="flex-1 ml-2 z-10">Read my [Social]</span>
+            <svg
+              class="arrow-icon z-10 relative w-3 sm:w-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"
+                stroke="#B3B3B3"
+                style="
+                  stroke: #b3b3b3;
+                  stroke: color(display-p3 0.702 0.702 0.702);
+                  stroke-opacity: 1;
+                "
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
         </div>
         <div
-          class="col-start-2 col-end-3 row-start-8 row-end-9 bg-[url('./files/Rectangle.png')] bg-cover bg-center sm:col-start-4 sm:col-end-5 sm:row-start-3 sm:row-end-4"
+          class="col-start-2 col-end-3 row-start-8 row-end-9 bg-[url('./files/Rectangle.png')] border-blackGray border-solid border-1 bg-cover bg-center sm:col-start-4 sm:col-end-5 sm:row-start-3 sm:row-end-4"
         >
           DIV7
         </div>
         <div
-          class="col-start-1 col-end-3 row-start-9 row-end-10 bg-[url('./files/whitecloud.png')] bg-cover bg-center sm:col-start-3 sm:col-end-5 sm:row-start-4 sm:row-end-5"
+          class="col-start-1 col-end-3 row-start-9 row-end-10 bg-[url('./files/whitecloud.png')] border-blackGray border-solid border-1 bg-cover bg-center sm:col-start-3 sm:col-end-5 sm:row-start-4 sm:row-end-5"
         >
           DIV8
         </div>
         <div
-          class="col-start-1 col-end-2 row-start-10 row-end-11 bg-red-500 sm:col-start-3 sm:col-end-4 sm:row-start-5 sm:row-end-6"
+          class="col-start-1 col-end-2 row-start-10 row-end-11 bg-red-500 border-blackGray border-solid border-1 sm:col-start-3 sm:col-end-4 sm:row-start-5 sm:row-end-6"
         >
           DIV9
           <h2 class="text-white">Application Name</h2>
         </div>
         <div
-          class="col-start-2 col-end-3 row-start-10 row-end-11 bg-red-500 sm:col-start-4 sm:col-end-5 sm:row-start-5 sm:row-end-6"
+          class="col-start-2 col-end-3 row-start-10 row-end-11 bg-red-500 border-blackGray border-solid border-1 sm:col-start-4 sm:col-end-5 sm:row-start-5 sm:row-end-6"
         >
           DIV10
           <h2 class="text-white">Say, hello</h2>
