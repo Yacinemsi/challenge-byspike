@@ -36,5 +36,8 @@ tailwind.config = {
         sm: "680px",
       },
     },
+    backgroundPosition: {
+      bottomCenter6: "center bottom -6rem",
+    },
   },
 };
