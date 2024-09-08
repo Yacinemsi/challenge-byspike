@@ -26,11 +26,11 @@ tailwind.config = {
         },
       },
       borderRadius: {
-        radius: "32px",
+        radius: "38px",
       },
 
       gridTemplateRows: {
-        "10-fixed": "repeat(10, 180px)",
+        "10-fixed": "repeat(10, 170px)",
         "5-fixed": "repeat(5, 230px)",
       },
       screens: {
