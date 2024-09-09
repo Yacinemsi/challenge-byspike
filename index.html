@@ -16,15 +16,80 @@
     <title>Portfolio Layout By Spikes</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles.css" />
+    <style>
+      @keyframes wave {
+        0%,
+        100% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(-20deg);
+        }
+        50% {
+          transform: rotate(20deg);
+        }
+        75% {
+          transform: rotate(-10deg);
+        }
+      }
+
+      #wave-hand {
+        display: inline-block;
+        animation: wave 2s infinite linear;
+        transform-origin: 70% 70%;
+      }
+
+      @keyframes fade-out {
+        0% {
+          transform: translate(0, 0);
+          opacity: 1;
+        }
+        100% {
+          transform: translate(100px, -100px);
+          opacity: 0;
+        }
+      }
+
+      @keyframes fade-in {
+        0% {
+          transform: translate(-100px, 100px);
+          opacity: 0;
+        }
+        100% {
+          transform: translate(0, 0);
+          opacity: 1;
+        }
+      }
+
+      .send-icon {
+        display: inline-block;
+      }
+
+      .fade-out {
+        animation: fade-out 1s forwards;
+      }
+
+      .fade-in {
+        animation: fade-in 1s forwards;
+      }
+    </style>
   </head>
   <body class="bg-graybg bg-[url('./files/Pattern.svg')] font-poppins">
     <header
-      class="max-w-5xl mx-auto mb-8 w-full justify-between items-center p-8 hidden md:flex"
+      class="max-w-[1070px] flex mx-auto sm:mb-8 w-full justify-between items-center p-8 relative z-50"
     >
       <div class="text-2xl font-bold w-24 flex-shrink-0">
         <img class="w-full h-12" src="./files/layers-logo.svg" alt="Logo" />
       </div>
-      <div class="mx-4">
+      <div class="block md:hidden">
+        <button
+          id="menu-button"
+          class="text-white hover:text-white focus:outline-none"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <div class="hidden md:flex mx-4">
         <nav
           class="flex text-gray bg-graybg border-solid border-[1px] rounded-full border-blackGray"
         >
@@ -60,7 +125,7 @@
           </ul>
         </nav>
       </div>
-      <div class="flex justify-end text-lg space-x-2">
+      <div class="hidden md:flex justify-end text-lg space-x-2">
         <a href="#"
           ><i
             class="fa-brands fa-dribbble text-gray hover:text-white transition-colors duration-300"
@@ -78,8 +143,62 @@
         ></a>
       </div>
     </header>
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden top-[100px] absolute left-0 right-0 bg-graybg bg-opacity-95 z-40"
+    >
+      <nav class="bg-graybg border-blackGray border-solid border-[1px] p-4">
+        <ul class="flex flex-col text-white space-y-4">
+          <li>
+            <a
+              href="#home"
+              class="font-poppins hover:bg-blackGray py-2 px-4 rounded-lg active:bg-blackGray"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-poppins hover:bg-blackGray py-2 px-4 rounded-lg"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-poppins hover:bg-blackGray py-2 px-4 rounded-lg"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-poppins hover:bg-blackGray py-2 px-4 rounded-lg"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="text-lg flex justify-end mt-2 space-x-2">
+          <a href="#"
+            ><i
+              class="fa-brands fa-dribbble text-gray hover:text-white transition-colors duration-300"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-facebook text-gray hover:text-white transition-colors duration-300"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-instagram text-gray hover:text-white transition-colors duration-300"
+            ></i
+          ></a>
+        </div>
+      </nav>
+    </div>
 
-    <main class="p-2" id="hom">
+    <main class="p-2" id="home">
       <div
         class="w-full grid grid-cols-2 grid-rows-10-fixed gap-4 max-w-5xl mx-auto place-content-center sm:grid-cols-4 sm:grid-rows-5-fixed"
       >
@@ -525,18 +644,62 @@
           />
         </div>
         <div
-          class="col-start-2 col-end-3 row-start-10 row-end-11 bg-red-500 border-blackGray border-solid border-1 sm:col-start-4 sm:col-end-5 sm:row-start-5 sm:row-end-6"
+          class="col-start-2 col-end-3 row-start-10 row-end-11 bg-deepBlack rounded-radius border-blackGray border-solid border-1 sm:col-start-4 sm:col-end-5 sm:row-start-5 sm:row-end-6 p-4 sm:px-6 sm:py-4 flex flex-col justify-between"
         >
-          DIV10
-          <h2 class="text-white">Say, hello</h2>
+          <h2 class="text-white text-3xl sm:text-4xl font-semibold">
+            Say,<br />Hello <span id="wave-hand">👋</span>
+          </h2>
+          <div class="relative flex gap-1 w-full mt-4">
+            <input
+              type="text"
+              placeholder="Click to message"
+              class="w-full text-xs px-2 rounded-full bg-graybg text-white placeholder-gray-500"
+            />
+            <button
+              id="sendButton"
+              class="bg-[#4355FB] w-8 h-6 sm:w-10 sm:h-8 overflow-hidden rounded-full"
+            >
+              <svg
+                id="sendIcon"
+                class="w-3 h-3 text-white send-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </main>
-    <footer class="flex justify-between items-center p-6">
-      <div>© 2023 Layers</div>
-      <div class="flex space-x-4">
-        <a href="#"><img src="path-to-icon.png" alt="Icon" /></a>
-        <a href="#"><img src="path-to-icon.png" alt="Icon" /></a>
+    <footer
+      class="flex justify-between items-center p-4 mt-10 max-w-[1060px] mx-auto"
+    >
+      <div><img class="w-24" src="./files/logoFooter.svg" alt="logo" /></div>
+      <div><small class="text-white text-xxs">DesignLunch</small></div>
+      <div class="flex justify-end text-lg space-x-2">
+        <a href="#"
+          ><i
+            class="fa-brands fa-dribbble text-gray hover:text-white transition-colors duration-300"
+          ></i
+        ></a>
+        <a href="#"
+          ><i
+            class="fa-brands fa-facebook text-gray hover:text-white transition-colors duration-300"
+          ></i
+        ></a>
+        <a href="#"
+          ><i
+            class="fa-brands fa-instagram text-gray hover:text-white transition-colors duration-300"
+          ></i
+        ></a>
       </div>
     </footer>
     <script src="./script.js"></script>

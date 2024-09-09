@@ -45,3 +45,19 @@ tailwind.config = {
     },
   },
 };
+
+document.getElementById("sendButton").addEventListener("click", function () {
+  const icon = document.getElementById("sendIcon");
+  icon.classList.remove("fade-in");
+  icon.classList.add("fade-out");
+
+  setTimeout(() => {
+    icon.classList.remove("fade-out");
+    icon.classList.add("fade-in");
+  }, 100);
+});
+
+document.getElementById("menu-button").addEventListener("click", function () {
+  var menu = document.getElementById("mobile-menu");
+  menu.classList.toggle("hidden");
+});
