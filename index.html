@@ -72,6 +72,13 @@
       .fade-in {
         animation: fade-in 1s forwards;
       }
+      .group:hover .rotate-reset-1 {
+        transform: rotate(0deg);
+      }
+      .group:hover .rotate-reset-2 {
+        transform: rotate(0deg);
+        margin-top: 6px;
+      }
     </style>
   </head>
   <body class="bg-graybg bg-[url('./files/Pattern.svg')] font-poppins">
@@ -362,11 +369,21 @@
               />
             </div>
           </div>
-          <div class="h-full flex flex-col justify-end items-center">
+          <div class="h-full flex flex-col justify-end items-center group">
             <img
-              class="w-64 sm:w-96"
-              src="./files/threeCard.png"
-              alt="Three Card"
+              src="./files/MaterialYou.png"
+              alt="Material You"
+              class="w-52 sm:w-64 -rotate-[12deg] transition-transform duration-500 rotate-reset-1"
+            />
+            <img
+              src="./files/iOS16.png"
+              alt="iOS 16"
+              class="w-52 sm:w-64 relative -my-14 sm:-my-20 z-2 rotate-[12deg] transition-all duration-500 rotate-reset-2"
+            />
+            <img
+              src="./files/BlackCard.png"
+              alt="Black Card"
+              class="w-60 ml-4 sm:w-72"
             />
           </div>
         </div>
