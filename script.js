@@ -30,7 +30,7 @@ tailwind.config = {
       },
 
       gridTemplateRows: {
-        "10-fixed": "repeat(10, 170px)",
+        "10-fixed": "repeat(10, 180px)",
         "5-fixed": "repeat(5, 230px)",
       },
       screens: {
